@@ -21,3 +21,9 @@ The microprocessor used for interacting and processing these CAN messages is ATm
 IDS UI-3240-ML-C-HQ is the second camera which is configfured to capture frames on the receipt of a hardware trigger. It is connected to Arduino Uno board with the help of a HIROSE HR-25 cable. The +5V supply and GND along with the TRIGGER and its GND are provided from the Arduino. The trigger pin is currently set at Digital I/O Pin 7.
 
 Additionally to test the logic with a simulator, another Arduino simulating the behavior of the camera on the CAN Bus has been set up. The default capture frequency has been set at 1 Hz.
+
+The serial baud rate must be set to 115200.
+
+Connection scheme of ids trigger: IDS red -> ARD white (Trigger IN -> DIGITIL 8); IDS purple -> ARD blue (Trigger GND -> GND)
+
+Connection scheme of LEDS: PWR (DIGITAL 7), INIT (DIGITAL 5), SYNC (DIGITAL 2), GND
